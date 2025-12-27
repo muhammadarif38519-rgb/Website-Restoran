@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Restoran - Bootstrap Restaurant Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Restoran</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="menu.html" class="nav-item nav-link active">Menu</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="booking.html" class="dropdown-item">Booking</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="" class="btn btn-primary py-2 px-4">PESAN SEKARANG</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Food Menu</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Menu</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Menu Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
+                    <h1 class="mb-5">Most Popular Items</h1>
+                </div>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                                <i class="fa fa-coffee fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Popular</small>
+                                    <h6 class="mt-n1 mb-0">Drinks</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                                <i class="fa fa-hamburger fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Special</small>
+                                    <h6 class="mt-n1 mb-0">Launch</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                                <i class="fa fa-utensils fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Lovely</small>
+                                    <h6 class="mt-n1 mb-0">Dinner</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/aku.jpeg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Iced Cafe Dolce</span>
+                                                <span class="text-primary">Rp 25.000</span>
+                                            </h5>
+                                            <small class="fst-italic">minuman kopi dingin yang manis dan menyegarkan, terbuat dari espresso pilihan, dicampur dengan susu segar dan sirup manis khas.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/z.jpeg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Hot Piccolo</span>
+                                                <span class="text-primary">Rp 15.000</span>
+                                            </h5>
+                                            <small class="fst-italic">Rasanya kaya dan pekat, tetapi tetap halus dan lembut berkat susu yang menyeimbangkan karakter espresso</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/l.jpeg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Hot Almond Latte</span>
+                                                <span class="text-primary">Rp 20.000</span>
+                                            </h5>
+                                            <small class="fst-italic">kopi espresso yang disajikan dengan susu panas dan sirup almond khas, menciptakan perpaduan rasa kopi yang kaya, lembut, dan sedikit manis ala kacang almond.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/k.jpeg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Hot Cappuccino</span>
+                                                <span class="text-primary">Rp 20.000</span>
+                                            </h5>
+                                            <small class="fst-italic">minuman kopi klasik yang terbuat dari espresso pilihan, dipadukan dengan susu panas dan busa susu lembut di atasnya.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/lo.jpeg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Iced Shaken Creamy Latte</span>
+                                                <span class="text-primary">Rp 25.000</span>
+                                            </h5>
+                                            <small class="fst-italic">minuman kopi dingin yang dibuat dari espresso pilihan, susu segar, dan krim lembut, lalu digosok atau shaken untuk menghasilkan tekstur yang ringan dan berbusa.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/ko.jpeg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Iced Shaken BlackPeach</span>
+                                                <span class="text-primary">Rp 25.000</span>
+                                            </h5>
+                                            <small class="fst-italic">terbuat dari perpaduan buah peach hitam dan sirup pilihan, disajikan dengan es dan diguncang (shaken) untuk menghasilkan rasa yang segar, manis alami, dan aromatik</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/mo.jpeg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Iced Long Black</span>
+                                                <span class="text-primary">Rp 25.000</span>
+                                            </h5>
+                                            <small class="fst-italic">Rasanya kopi asli yang kuat dan segar, tanpa tambahan susu, sehingga cocok bagi pecinta kopi yang menyukai rasa murni dan intens.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/vu.jpeg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Iced Cappccino with Coffee Jelly</span>
+                                                <span class="text-primary">Rp 25.000</span>
+                                            </h5>
+                                            <small class="fst-italic">minuman kopi dingin yang memadukan espresso dan susu segar dengan busa cappuccino yang lembut, dipadukan dengan cincangan coffee jelly kenyal.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/cok.webp" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Roti Bakar Gelato</span>
+                                                <span class="text-primary">Rp 38.000</span>
+                                            </h5>
+                                            <small class="fst-italic">Roti bakar lembut yang disajikan hangat, dipadukan dengan gelato creamy pilihanmu, sirup manis, dan taburan topping yang menggoda.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/tur.webp" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Nasi Goreng Kimchi Fusion</span>
+                                                <span class="text-primary">Rp 45.000</span>
+                                            </h5>
+                                            <small class="fst-italic">Nasi goreng lezat yang memadukan cita rasa Indonesia dan Korea. Dengan tambahan kimchi pedas dan asam khas Korea, bumbu nasi goreng gurih</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/ana.webp" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Tropical Blue Smoothie Bowl</span>
+                                                <span class="text-primary">Rp 50.000</span>
+                                            </h5>
+                                            <small class="fst-italic">Smoothie bowl segar dengan warna biru tropis yang memikat, terbuat dari campuran buah tropis segar seperti pisang, mangga, dan buah naga biru, dilengkapi topping granola, biji chia, dan buah segar.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/qw.webp" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Egg Drop Sandwich</span>
+                                                <span class="text-primary">Rp 30.000</span>
+                                            </h5>
+                                            <small class="fst-italic">Sandwich hangat dengan telur orak-arik lembut, dipadukan dengan roti segar dan pilihan topping seperti sayuran, keju, atau saus spesial.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/gt.webp" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span> Katsu Sando</span>
+                                                <span class="text-primary">Rp 45.000</span>
+                                            </h5>
+                                            <small class="fst-italic">Sandwich ala Jepang yang terdiri dari daging katsu renyah (ayam atau sapi) di antara roti putih lembut, dengan tambahan saus tonkatsu khas dan sayuran segar.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/bv.webp" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>ramen burger</span>
+                                                <span class="text-primary">Rp 25.000</span>
+                                            </h5>
+                                            <small class="fst-italic">Ramen burger adalah makanan unik yang merupakan kombinasi antara ramen dan burger — bukannya memakai roti seperti burger biasa, “bun”-nya diganti dengan mi ramen yang dibentuk dan dipanggang atau digoreng sehingga mirip roti burger.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/nb.webp" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span> Burger Samurai</span>
+                                                <span class="text-primary">Rp 25.000</span>
+                                            </h5>
+                                            <small class="fst-italic">burger bergaya Jepang atau bergaya teriyaki yang manis‑gurih — terutama dikenal sebagai menu Samurai Burger yang pernah/populer di McDonald’s di beberapa negara Asia.</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/zx.webp" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">Rp 25.000</span>
+                                            </h5>
+                                            <small class="fst-italic">pilihan burger yang populer karena lebih ringan dan terasa gurih dari daging ayam dibandingkan daging sapi.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/mn.webp" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Nasi goreng spesial</span>
+                                                <span class="text-primary">Rp 25.000</span>
+                                            </h5>
+                                            <small class="fst-italic">Nasi Goreng Spesial adalah hidangan nasi goreng yang dimasak dengan bumbu khas seperti bawang putih, bawang merah, kecap manis, dan saus pilihan, lalu dipadukan dengan topping lengkap seperti telur, ayam, sosis, atau bakso.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/121.webp" alt=" " style="width: 80px; ">
+                                        <div class="w-100 d-flex flex-column text-start ps-4 ">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 ">
+                                                <span>Sosis bakar saus BBQ</span>
+                                                <span class="text-primary ">Rp 18.000</span>
+                                            </h5>
+                                            <small class="fst-italic ">hidangan sosis yang dibakar hingga harum dan sedikit kecokelatan, lalu dilumuri saus BBQ manis dan gurih.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ">
+                                    <div class="d-flex align-items-center ">
+                                        <img class="flex-shrink-0 img-fluid rounded " src="img/111.webp " alt=" " style="width: 80px; ">
+                                        <div class="w-100 d-flex flex-column text-start ps-4 ">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 ">
+                                                <span>Chicken steak saus blackpepper</span>
+                                                <span class="text-primary ">Rp 35.000</span>
+                                            </h5>
+                                            <small class="fst-italic ">hidangan dada ayam yang dipanggang atau digoreng hingga matang dan juicy, lalu disiram saus lada hitam (blackpepper) yang gurih, sedikit pedas, dan harum.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ">
+                                    <div class="d-flex align-items-center ">
+                                        <img class="flex-shrink-0 img-fluid rounded " src="img/222.webp " alt=" " style="width: 80px; ">
+                                        <div class="w-100 d-flex flex-column text-start ps-4 ">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 ">
+                                                <span>Spaghetti bolognese</span>
+                                                <span class="text-primary ">Rp 27.000</span>
+                                            </h5>
+                                            <small class="fst-italic ">hidangan pasta khas Italia yang disajikan dengan saus tomat daging cincang yang gurih dan sedikit asam manis. Saus dimasak dengan bawang, rempah pilihan, dan daging ayam atau sapi, lalu disajikan hangat di atas spaghetti dengan taburan keju.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ">
+                                    <div class="d-flex align-items-center ">
+                                        <img class="flex-shrink-0 img-fluid rounded " src="img/311.webp" alt=" " style="width: 80px; ">
+                                        <div class="w-100 d-flex flex-column text-start ps-4 ">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 ">
+                                                <span>Ayam crispy saus keju</span>
+                                                <span class="text-primary ">Rp 27.000</span>
+                                            </h5>
+                                            <small class="fst-italic ">Ayam Crispy Saus Keju adalah hidangan ayam goreng tepung yang renyah di luar dan lembut di dalam, lalu disiram saus keju creamy yang gurih dan lezat.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ">
+                                    <div class="d-flex align-items-center ">
+                                        <img class="flex-shrink-0 img-fluid rounded " src="img/322.webp" alt=" " style="width: 80px; ">
+                                        <div class="w-100 d-flex flex-column text-start ps-4 ">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 ">
+                                                <span>Fish and chips</span>
+                                                <span class="text-primary ">Rp 32.000</span>
+                                            </h5>
+                                            <small class="fst-italic ">h hidangan khas Barat yang terdiri dari ikan fillet goreng tepung yang renyah di luar dan lembut di dalam, disajikan bersama kentang goreng dan saus pelengkap seperti saus tartar atau saus tomat.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ">
+                                    <div class="d-flex align-items-center ">
+                                        <img class="flex-shrink-0 img-fluid rounded " src="img/333.webp " alt=" " style="width: 80px; ">
+                                        <div class="w-100 d-flex flex-column text-start ps-4 ">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 ">
+                                                <span>Spaghetti carbonara</span>
+                                                <span class="text-primary ">Rp 27.000</span>
+                                            </h5>
+                                            <small class="fst-italic ">hidangan pasta creamy khas Italia yang dibuat dengan saus berbahan dasar krim, telur, keju parmesan, dan potongan daging asap (bacon/ham).</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ">
+                                    <div class="d-flex align-items-center ">
+                                        <img class="flex-shrink-0 img-fluid rounded " src="img/411.webp" alt=" " style="width: 80px; ">
+                                        <div class="w-100 d-flex flex-column text-start ps-4 ">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 ">
+                                                <span>Nasi ayam teriyaki</span>
+                                                <span class="text-primary ">Rp 35.000</span>
+                                            </h5>
+                                            <small class="fst-italic ">hidangan nasi putih hangat yang disajikan dengan potongan ayam panggang atau tumis yang dilapisi saus teriyaki manis dan gurih khas Jepang.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Reservation</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Stabat, Langkat , Indonesia</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+62 838-8888-9999</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>arifstabat1221@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+                        <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                        <p>09AM - 09PM</p>
+                        <h5 class="text-light fw-normal">Sunday</h5>
+                        <p>10AM - 08PM</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Info & Update</h4>
+                        <p>Masuk / Login untuk mendapatkan info/update terbaru dari lume'a cafe</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Muhammad Arif</a>, All Right Reserved.
+
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br><br> Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

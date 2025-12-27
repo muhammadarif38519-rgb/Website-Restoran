@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Restoran - Bootstrap Restaurant Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Lume’a Café</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="menu.html" class="nav-item nav-link">Menu</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="booking.html" class="dropdown-item">Booking</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="" class="btn btn-primary py-2 px-4">Pesan Sekarang</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container my-5 py-5">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="display-3 text-white animated slideInLeft">Relaxed<br>with Class</h1>
+                            <p class="text-white animated slideInLeft mb-4 pb-2">Lume’a adalah ruang untuk berhenti sejenak, menikmati kopi berkualitas dalam suasana yang ringan namun berkelas. Tempat di mana obrolan mengalir, waktu terasa lebih pelan, dan setiap tegukan menghadirkan cahaya kecil dalam
+                                hari yang sibuk.</p>
+                            <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Pesan Sekarang</a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                            <img class="img-fluid" src="img/OIP-removebg-preview.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                                <h5>Master Chefs</h5>
+                                <p>Bagi Master Chef Lume’a, memasak adalah seni menyampaikan rasa. Dengan sentuhan detail dan standar kualitas tinggi, setiap hidangan diracik untuk menemani momen santai Anda, tanpa kehilangan kelas dan karakter.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                                <h5>Quality Food</h5>
+                                <p>Di Lume’a, kualitas adalah prioritas utama. Kami memilih bahan terbaik, menjaga kesegaran, dan mengolah setiap hidangan dengan standar tinggi. Karena bagi kami, rasa yang baik selalu berawal dari kualitas yang jujur</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
+                                <h5>Online Order</h5>
+                                <p>Rasakan pengalaman Lume’a tanpa harus datang ke kafe. Pesanan online kami siap menghadirkan kualitas, rasa, dan kenyamanan langsung ke tanganmu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                                <h5>24/7 Service</h5>
+                                <p>Nikmati kopi dan hidangan favoritmu kapan saja tanpa khawatir waktu. Lume’a siap melayani kamu 24 jam sehari, 7 hari seminggu, agar setiap momen santai tetap nyaman dan berkualitas, kapan pun kamu butuh.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/nukar.webp">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/mukol.jpg" style="margin-top: 25%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="img/loki.webp">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/pukol.webp">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
+                        <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>Lume'a Cafe</h1>
+                        <p class="mb-4">Cahaya kecil, rasa yang tulus. Lume’a hadir untuk menemani jeda harimu.</p>
+                        <p class="mb-4">Datang santai, pulang bahagia. Ngopi dulu di Lume’a.</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">12</h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Years of</p>
+                                        <h6 class="text-uppercase mb-0">Experience</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">4</h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Popular</p>
+                                        <h6 class="text-uppercase mb-0">Master Chefs</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary py-3 px-5 mt-2" href="">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Menu Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
+                    <h1 class="mb-5">Most Popular Items</h1>
+                </div>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                                <i class="fa fa-coffee fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Popular</small>
+                                    <h6 class="mt-n1 mb-0">Drinks</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                                <i class="fa fa-hamburger fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Special</small>
+                                    <h6 class="mt-n1 mb-0">Launch</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                                <i class="fa fa-utensils fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Lovely</small>
+                                    <h6 class="mt-n1 mb-0">Dinner</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/aku.jpeg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Iced Cafe Dolce</span>
+                                                <span class="text-primary">Rp 25.000</span>
+                                            </h5>
+                                            <small class="fst-italic">minuman kopi dingin yang manis dan menyegarkan, terbuat dari espresso pilihan, dicampur dengan susu segar dan sirup manis khas.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/z.jpeg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Hot Piccolo</span>
+                                                <span class="text-primary">Rp 15.000</span>
+                                            </h5>
+                                            <small class="fst-italic">Rasanya kaya dan pekat, tetapi tetap halus dan lembut berkat susu yang menyeimbangkan karakter espresso</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/l.jpeg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Hot Almond Latte</span>
+                                                <span class="text-primary">Rp 20.000</span>
+                                            </h5>
+                                            <small class="fst-italic">kopi espresso yang disajikan dengan susu panas dan sirup almond khas, menciptakan perpaduan rasa kopi yang kaya, lembut, dan sedikit manis ala kacang almond.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/k.jpeg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Hot Cappuccino</span>
+                                                <span class="text-primary">Rp 20.000</span>
+                                            </h5>
+                                            <small class="fst-italic">minuman kopi klasik yang terbuat dari espresso pilihan, dipadukan dengan susu panas dan busa susu lembut di atasnya.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/lo.jpeg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Iced Shaken Creamy Latte</span>
+                                                <span class="text-primary">Rp 25.000</span>
+                                            </h5>
+                                            <small class="fst-italic">minuman kopi dingin yang dibuat dari espresso pilihan, susu segar, dan krim lembut, lalu digosok atau shaken untuk menghasilkan tekstur yang ringan dan berbusa.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/ko.jpeg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Iced Shaken BlackPeach</span>
+                                                <span class="text-primary">Rp 25.000</span>
+                                            </h5>
+                                            <small class="fst-italic">terbuat dari perpaduan buah peach hitam dan sirup pilihan, disajikan dengan es dan diguncang (shaken) untuk menghasilkan rasa yang segar, manis alami, dan aromatik</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/mo.jpeg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Iced Long Black</span>
+                                                <span class="text-primary">Rp 25.000</span>
+                                            </h5>
+                                            <small class="fst-italic">Rasanya kopi asli yang kuat dan segar, tanpa tambahan susu, sehingga cocok bagi pecinta kopi yang menyukai rasa murni dan intens.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/vu.jpeg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Iced Cappccino with Coffee Jelly</span>
+                                                <span class="text-primary">Rp 25.000</span>
+                                            </h5>
+                                            <small class="fst-italic">minuman kopi dingin yang memadukan espresso dan susu segar dengan busa cappuccino yang lembut, dipadukan dengan cincangan coffee jelly kenyal.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/cok.webp" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Roti Bakar Gelato</span>
+                                                <span class="text-primary">Rp 38.000</span>
+                                            </h5>
+                                            <small class="fst-italic">Roti bakar lembut yang disajikan hangat, dipadukan dengan gelato creamy pilihanmu, sirup manis, dan taburan topping yang menggoda.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/tur.webp" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Nasi Goreng Kimchi Fusion</span>
+                                                <span class="text-primary">Rp 45.000</span>
+                                            </h5>
+                                            <small class="fst-italic">Nasi goreng lezat yang memadukan cita rasa Indonesia dan Korea. Dengan tambahan kimchi pedas dan asam khas Korea, bumbu nasi goreng gurih</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/ana.webp" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Tropical Blue Smoothie Bowl</span>
+                                                <span class="text-primary">Rp 50.000</span>
+                                            </h5>
+                                            <small class="fst-italic">Smoothie bowl segar dengan warna biru tropis yang memikat, terbuat dari campuran buah tropis segar seperti pisang, mangga, dan buah naga biru, dilengkapi topping granola, biji chia, dan buah segar.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/qw.webp" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Egg Drop Sandwich</span>
+                                                <span class="text-primary">Rp 30.000</span>
+                                            </h5>
+                                            <small class="fst-italic">Sandwich hangat dengan telur orak-arik lembut, dipadukan dengan roti segar dan pilihan topping seperti sayuran, keju, atau saus spesial.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/gt.webp" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span> Katsu Sando</span>
+                                                <span class="text-primary">Rp 45.000</span>
+                                            </h5>
+                                            <small class="fst-italic">Sandwich ala Jepang yang terdiri dari daging katsu renyah (ayam atau sapi) di antara roti putih lembut, dengan tambahan saus tonkatsu khas dan sayuran segar.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/bv.webp" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>ramen burger</span>
+                                                <span class="text-primary">Rp 25.000</span>
+                                            </h5>
+                                            <small class="fst-italic">Ramen burger adalah makanan unik yang merupakan kombinasi antara ramen dan burger — bukannya memakai roti seperti burger biasa, “bun”-nya diganti dengan mi ramen yang dibentuk dan dipanggang atau digoreng sehingga mirip roti burger.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/nb.webp" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span> Burger Samurai</span>
+                                                <span class="text-primary">Rp 25.000</span>
+                                            </h5>
+                                            <small class="fst-italic">burger bergaya Jepang atau bergaya teriyaki yang manis‑gurih — terutama dikenal sebagai menu Samurai Burger yang pernah/populer di McDonald’s di beberapa negara Asia.</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/zx.webp" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chicken Burger</span>
+                                                <span class="text-primary">Rp 25.000</span>
+                                            </h5>
+                                            <small class="fst-italic">pilihan burger yang populer karena lebih ringan dan terasa gurih dari daging ayam dibandingkan daging sapi.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/mn.webp" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Nasi goreng spesial</span>
+                                                <span class="text-primary">Rp 25.000</span>
+                                            </h5>
+                                            <small class="fst-italic">Nasi Goreng Spesial adalah hidangan nasi goreng yang dimasak dengan bumbu khas seperti bawang putih, bawang merah, kecap manis, dan saus pilihan, lalu dipadukan dengan topping lengkap seperti telur, ayam, sosis, atau bakso.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/121.webp" alt=" " style="width: 80px; ">
+                                        <div class="w-100 d-flex flex-column text-start ps-4 ">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 ">
+                                                <span>Sosis bakar saus BBQ</span>
+                                                <span class="text-primary ">Rp 18.000</span>
+                                            </h5>
+                                            <small class="fst-italic ">hidangan sosis yang dibakar hingga harum dan sedikit kecokelatan, lalu dilumuri saus BBQ manis dan gurih.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ">
+                                    <div class="d-flex align-items-center ">
+                                        <img class="flex-shrink-0 img-fluid rounded " src="img/111.webp " alt=" " style="width: 80px; ">
+                                        <div class="w-100 d-flex flex-column text-start ps-4 ">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 ">
+                                                <span>Chicken steak saus blackpepper</span>
+                                                <span class="text-primary ">Rp 35.000</span>
+                                            </h5>
+                                            <small class="fst-italic ">hidangan dada ayam yang dipanggang atau digoreng hingga matang dan juicy, lalu disiram saus lada hitam (blackpepper) yang gurih, sedikit pedas, dan harum.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ">
+                                    <div class="d-flex align-items-center ">
+                                        <img class="flex-shrink-0 img-fluid rounded " src="img/222.webp " alt=" " style="width: 80px; ">
+                                        <div class="w-100 d-flex flex-column text-start ps-4 ">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 ">
+                                                <span>Spaghetti bolognese</span>
+                                                <span class="text-primary ">Rp 27.000</span>
+                                            </h5>
+                                            <small class="fst-italic ">hidangan pasta khas Italia yang disajikan dengan saus tomat daging cincang yang gurih dan sedikit asam manis. Saus dimasak dengan bawang, rempah pilihan, dan daging ayam atau sapi, lalu disajikan hangat di atas spaghetti dengan taburan keju.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ">
+                                    <div class="d-flex align-items-center ">
+                                        <img class="flex-shrink-0 img-fluid rounded " src="img/311.webp" alt=" " style="width: 80px; ">
+                                        <div class="w-100 d-flex flex-column text-start ps-4 ">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 ">
+                                                <span>Ayam crispy saus keju</span>
+                                                <span class="text-primary ">Rp 27.000</span>
+                                            </h5>
+                                            <small class="fst-italic ">Ayam Crispy Saus Keju adalah hidangan ayam goreng tepung yang renyah di luar dan lembut di dalam, lalu disiram saus keju creamy yang gurih dan lezat.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ">
+                                    <div class="d-flex align-items-center ">
+                                        <img class="flex-shrink-0 img-fluid rounded " src="img/322.webp" alt=" " style="width: 80px; ">
+                                        <div class="w-100 d-flex flex-column text-start ps-4 ">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 ">
+                                                <span>Fish and chips</span>
+                                                <span class="text-primary ">Rp 32.000</span>
+                                            </h5>
+                                            <small class="fst-italic ">h hidangan khas Barat yang terdiri dari ikan fillet goreng tepung yang renyah di luar dan lembut di dalam, disajikan bersama kentang goreng dan saus pelengkap seperti saus tartar atau saus tomat.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ">
+                                    <div class="d-flex align-items-center ">
+                                        <img class="flex-shrink-0 img-fluid rounded " src="img/333.webp " alt=" " style="width: 80px; ">
+                                        <div class="w-100 d-flex flex-column text-start ps-4 ">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 ">
+                                                <span>Spaghetti carbonara</span>
+                                                <span class="text-primary ">Rp 27.000</span>
+                                            </h5>
+                                            <small class="fst-italic ">hidangan pasta creamy khas Italia yang dibuat dengan saus berbahan dasar krim, telur, keju parmesan, dan potongan daging asap (bacon/ham).</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ">
+                                    <div class="d-flex align-items-center ">
+                                        <img class="flex-shrink-0 img-fluid rounded " src="img/411.webp" alt=" " style="width: 80px; ">
+                                        <div class="w-100 d-flex flex-column text-start ps-4 ">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2 ">
+                                                <span>Nasi ayam teriyaki</span>
+                                                <span class="text-primary ">Rp 35.000</span>
+                                            </h5>
+                                            <small class="fst-italic ">hidangan nasi putih hangat yang disajikan dengan potongan ayam panggang atau tumis yang dilapisi saus teriyaki manis dan gurih khas Jepang.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu End -->
+
+
+        <!-- Reservation Start -->
+        <div class="container-xxl py-5 px-0 wow fadeInUp " data-wow-delay="0.1s ">
+            <div class="row g-0 ">
+                <div class="col-md-6 ">
+                    <div class="video ">
+                        <button type="button " class="btn-play " data-bs-toggle="modal " data-src="https://www.youtube.com/embed/DWRcNpR6Kdc " data-bs-target="#videoModal ">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 bg-dark d-flex align-items-center ">
+                    <div class="p-5 wow fadeInUp " data-wow-delay="0.2s ">
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal ">Reservation</h5>
+                        <h1 class="text-white mb-4 ">Pesan meja online</h1>
+                        <form>
+                            <div class="row g-3 ">
+                                <div class="col-md-6 ">
+                                    <div class="form-floating ">
+                                        <input type="text " class="form-control " id="name " placeholder="Your Name ">
+                                        <label for="name ">Nama Kamu</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="form-floating ">
+                                        <input type="email " class="form-control " id="email " placeholder="Your Email ">
+                                        <label for="email ">Email kamu</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="form-floating date " id="date3 " data-target-input="nearest ">
+                                        <input type="text " class="form-control datetimepicker-input " id="datetime " placeholder="Date & Time " data-target="#date3 " data-toggle="datetimepicker " />
+                                        <label for="datetime ">Tanggal dan Waktu</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="form-floating ">
+                                        <select class="form-select " id="select1 ">
+                                          <option value="1 ">1 Orang</option>
+                                          <option value="2 ">2 Orang</option>
+                                          <option value="3 ">3 Orang</option>
+                                           <option value="1 ">4 Orang</option>
+                                            <option value="1 ">5 Orang</option>
+                                             <option value="1 ">6 Orang</option>
+                                        </select>
+                                        <label for="select1 ">Untuk Berapa Orang</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 ">
+                                    <div class="form-floating ">
+                                        <textarea class="form-control " placeholder="Special Request " id="message " style="height: 100px "></textarea>
+                                        <label for="message ">Permintaan Spesial</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 ">
+                                    <button class="btn btn-primary w-100 py-3 " type="submit ">Pesan Sekarang</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade " id="videoModal " tabindex="-1 " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+            <div class="modal-dialog ">
+                <div class="modal-content rounded-0 ">
+                    <div class="modal-header ">
+                        <h5 class="modal-title " id="exampleModalLabel ">Youtube Video</h5>
+                        <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
+                    </div>
+                    <div class="modal-body ">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9 ">
+                            <iframe class="embed-responsive-item " src=" " id="video " allowfullscreen allowscriptaccess="always " allow="autoplay "></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Reservation Start -->
+
+
+        <!-- Team Start -->
+        <div class="container-xxl pt-5 pb-3 ">
+            <div class="container ">
+                <div class="text-center wow fadeInUp " data-wow-delay="0.1s ">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal ">Team Members</h5>
+                    <h1 class="mb-5 ">Our Master Chefs</h1>
+                </div>
+                <div class="row g-4 ">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp " data-wow-delay="0.1s ">
+                        <div class="team-item text-center rounded overflow-hidden ">
+                            <div class="rounded-circle overflow-hidden m-4 ">
+                                <img class="img-fluid " src="img/qwe.webp" alt=" ">
+                            </div>
+                            <h5 class="mb-0 ">Fizi Flexing</h5>
+                            <small>Designation</small>
+                            <div class="d-flex justify-content-center mt-3 ">
+                                <a class="btn btn-square btn-primary mx-1 " href=" "><i class="fab fa-facebook-f "></i></a>
+                                <a class="btn btn-square btn-primary mx-1 " href=" "><i class="fab fa-twitter "></i></a>
+                                <a class="btn btn-square btn-primary mx-1 " href=" "><i class="fab fa-instagram "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp " data-wow-delay="0.3s ">
+                        <div class="team-item text-center rounded overflow-hidden ">
+                            <div class="rounded-circle overflow-hidden m-4 ">
+                                <img class="img-fluid " src="img/1111.webp" alt=" ">
+                            </div>
+                            <h5 class="mb-0 ">Opah Syantick</h5>
+                            <small>Designation</small>
+                            <div class="d-flex justify-content-center mt-3 ">
+                                <a class="btn btn-square btn-primary mx-1 " href=" "><i class="fab fa-facebook-f "></i></a>
+                                <a class="btn btn-square btn-primary mx-1 " href=" "><i class="fab fa-twitter "></i></a>
+                                <a class="btn btn-square btn-primary mx-1 " href=" "><i class="fab fa-instagram "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp " data-wow-delay="0.5s ">
+                        <div class="team-item text-center rounded overflow-hidden ">
+                            <div class="rounded-circle overflow-hidden m-4 ">
+                                <img class="img-fluid " src="img/vbb.webp" alt=" ">
+                            </div>
+                            <h5 class="mb-0 ">Ijat Jeng Nghatt</h5>
+                            <small>Designation</small>
+                            <div class="d-flex justify-content-center mt-3 ">
+                                <a class="btn btn-square btn-primary mx-1 " href=" "><i class="fab fa-facebook-f "></i></a>
+                                <a class="btn btn-square btn-primary mx-1 " href=" "><i class="fab fa-twitter "></i></a>
+                                <a class="btn btn-square btn-primary mx-1 " href=" "><i class="fab fa-instagram "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp " data-wow-delay="0.7s ">
+                        <div class="team-item text-center rounded overflow-hidden ">
+                            <div class="rounded-circle overflow-hidden m-4 ">
+                                <img class="img-fluid " src="img/mkk.webp " alt=" ">
+                            </div>
+                            <h5 class="mb-0 ">Upin Syhok Asyik</h5>
+                            <small>Designation</small>
+                            <div class="d-flex justify-content-center mt-3 ">
+                                <a class="btn btn-square btn-primary mx-1 " href=" "><i class="fab fa-facebook-f "></i></a>
+                                <a class="btn btn-square btn-primary mx-1 " href=" "><i class="fab fa-twitter "></i></a>
+                                <a class="btn btn-square btn-primary mx-1 " href=" "><i class="fab fa-instagram "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5 wow fadeInUp " data-wow-delay="0.1s ">
+            <div class="container ">
+                <div class="text-center ">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal ">Testimonial</h5>
+                    <h1 class="mb-5 ">Our Clients Say!!!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel ">
+                    <div class="testimonial-item bg-transparent border rounded p-4 ">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3 "></i>
+                        <p>Makanan dan Minuman disini sangat tidak baik pelayanan nya juga lama sangat tidak di rekomendasikan </p>
+                        <div class="d-flex align-items-center ">
+                            <img class="img-fluid flex-shrink-0 rounded-circle " src="img/xzz.webp " style="width: 50px; height: 50px; ">
+                            <div class="ps-3 ">
+                                <h5 class="mb-1 ">Wahyu uget" bali</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Jangan menyebarkan berita hoakss wahyu ,semua makanan dan minuman di sini di buat dengan bahan dan rasa yang berkualitasss!</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/bgg.webp" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Azril Rodok"</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>WOOOOOOOOO WAHYUUUUUUU , BIG L WAHYUUUUUU....</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/09.webp" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Hamid Icikiwir</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Ya allah lindungi bilqis , Ya allah sayangi bilqis , Ya allah jaga bilqis</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/bvc.webp" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Syifa Rayap</h5>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Reservation</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Stabat, Langkat , Indonesia
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+62 838-8888-9999</p>
+                            <p class="mb-2"><i class="fa fa-envelope me-3"></i>arifstabat1221@gmail.com</p>
+                            <div class="d-flex pt-2">
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+                        <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                        <p>09AM - 09PM</p>
+                        <h5 class="text-light fw-normal">Sunday</h5>
+                        <p>10AM - 08PM</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Info & Update</h4>
+                        <p>Masuk / Login untuk mendapatkan info/update terbaru dari lume'a cafe</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">Muhammad Arif</a>, All Right Reserved.
+
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br><br> Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
